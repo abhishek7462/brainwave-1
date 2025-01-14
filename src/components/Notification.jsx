@@ -3,6 +3,7 @@ import { notificationImages } from "../constants";
 
 const Notification = ({ className, title }) => {
   return (
+    
     <div
       className={`${
         className || ""

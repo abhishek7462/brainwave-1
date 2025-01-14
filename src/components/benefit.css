@@ -1,0 +1,92 @@
+/* container */
+.container {
+    position: relative;
+    z-index: 2;
+  }
+  
+  /* Heading */
+  .heading {
+    max-width: 48rem; /* Adjust for md:max-w-md */
+  }
+  
+  /* Flex wrapper */
+  .flex-wrap-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2.5rem;
+    margin-bottom: 2.5rem;
+  }
+  
+  /* Benefit card */
+  .benefit-card {
+    position: relative;
+    padding: 0.125rem;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    max-width: 24rem; /* Adjust for md:max-w-[24rem] */
+  }
+  
+  .benefit-card-content {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    min-height: 22rem;
+    padding: 2.4rem;
+    pointer-events: none;
+  }
+  
+  .benefit-title {
+    margin-bottom: 1.25rem; /* Adjust for mb-5 */
+  }
+  
+  .benefit-text {
+    margin-bottom: 1.5rem; /* Adjust for mb-6 */
+    color: #aaa; /* Adjust for text-n-3 */
+  }
+  
+  .benefit-footer {
+    display: flex;
+    align-items: center;
+    margin-top: auto;
+  }
+  
+  .benefit-footer img {
+    margin-right: auto;
+  }
+  
+  .benefit-footer-text {
+    margin-left: auto;
+    font-family: monospace;
+    font-size: 0.75rem;
+    font-weight: bold;
+    color: #111; /* Adjust for text-n-1 */
+    text-transform: uppercase;
+    letter-spacing: 0.1em; /* Adjust for tracking-wider */
+  }
+  
+  /* Overlay */
+  .benefit-overlay {
+    position: absolute;
+    inset: 0.125rem; /* Adjust for inset-0.5 */
+    background-color: #333; /* Adjust for bg-n-8 */
+    clip-path: url(#benefits);
+  }
+  
+  .benefit-overlay img {
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  
+  .benefit-overlay:hover img {
+    opacity: 0.1; /* Adjust for hover:opacity-10 */
+  }
+  
+  .benefit-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
